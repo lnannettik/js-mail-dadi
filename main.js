@@ -2,25 +2,27 @@
 console.log(`JS OK`);
 
 
-// ESERCIZIO DADI
+// // ESERCIZIO DADI
 
 let btnUtente = document.getElementById('btnUtente');
 
+let numUtente = Math.floor(Math.random() * 6) + 1;
+console.log(numUtente);
+
+
 let btnPC = document.getElementById('btnUtente');
+
+let numPC = Math.floor(Math.random() * 6) + 1;
+console.log(numPC);
+
 
 
 btnUtente.addEventListener('click', function () {
-    let numUtente = Math.floor(Math.random() * 6) + 1;
-    console.log(numUtente);
-
     document.getElementById("casualeUtente").innerHTML ="Il tuo numero a caso è: " + numUtente;
 });
 
 
 btnPC.addEventListener('click', function () {
-    let numPC = Math.floor(Math.random() * 6) + 1;
-    console.log(numPC);
-    
     document.getElementById("casualePC").innerHTML ="Il mio numero è: " + numPC;
 });
 
@@ -35,7 +37,30 @@ if (numUtente > numPC) {
 }
 
 
-// ESERCIZIO MAIL
+
+
+// // ESERCIZIO MAIL
+
+// // Mail
+// // - crea una lista contenente almeno 3 indirizzi email
+// // - chiedi all’utente la sua email,
+// // - controlla che sia nella lista di chi può accedere (lista creata sopra al punto 1),
+// // - stampa un messaggio appropriato sull’esito del controllo.
+
+
+// const mailList = [`alpaca@gmail.com`, `aieie.brazorf@gmail.com`, `pdor@gmail.com`]
+// console.log(mailList);
+// console.log(`numero di elementi array`, mailList.lenght);
+
+
+
+
+
+
+
+
+
+
 
 
 
