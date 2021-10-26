@@ -5,17 +5,18 @@ console.log(`JS OK`);
 // // ESERCIZIO DADI
 
 
+let btnUtente = document.getElementById('btnUtente');
+
 let numUtente = Math.floor(Math.random() * 6) + 1;
 console.log(numUtente);
 
-let btnUtente = document.getElementById('btnUtente');
 
-
+let btnPC = document.getElementById('btnPC');
 
 let numPC = Math.floor(Math.random() * 6) + 1;
 console.log(numPC);
 
-let btnPC = document.getElementById('btnPC');
+
 
 
 btnUtente.addEventListener('click', function () {
@@ -24,7 +25,7 @@ btnUtente.addEventListener('click', function () {
 
 
 
-btnPC.addEventListener('click', function () {
+btnPC.addEventListener('click', function () {   
     document.getElementById("casualePC").innerHTML ="Il mio numero è: " + numPC;
 });
 
