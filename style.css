@@ -1,0 +1,19 @@
+/* GENERAL RESET */
+* {
+    padding: 0;
+    margin-left: 1em;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 2em;
+}
+
+button {
+    margin-bottom: 1em;
+}
+
+mb-60 {
+    margin-bottom: 60px;
+}
