@@ -1,18 +1,8 @@
 // CHECH
 console.log(`JS OK`);
 
-// const primo = parseInt(prompt(`inserisci un il primo numero`));
-// console.log(`${primo}`)
 
-// const secondo = parseInt(prompt(`inserisci il secondo numero`));
-// console.log(`${secondo}`)
-
-
-// if (primo > secondo) {
-//     console.log(`${primo}`)
-// } else {
-//     console.log(`${secondo}`)
-// }
+// ESERCIZIO DADI
 
 let btnUtente = document.getElementById('btnUtente');
 
@@ -20,15 +10,17 @@ let btnPC = document.getElementById('btnUtente');
 
 
 btnUtente.addEventListener('click', function () {
-    let numUtente = Math.round(Math.random() * 100);
+    let numUtente = Math.floor(Math.random() * 6) + 1;
     console.log(numUtente);
+
     document.getElementById("casualeUtente").innerHTML ="Il tuo numero a caso è: " + numUtente;
 });
 
 
 btnPC.addEventListener('click', function () {
-    let numPC = Math.round(Math.random() * 100);
+    let numPC = Math.floor(Math.random() * 6) + 1;
     console.log(numPC);
+    
     document.getElementById("casualePC").innerHTML ="Il mio numero è: " + numPC;
 });
 
@@ -41,6 +33,11 @@ if (numUtente > numPC) {
     console.log(`Hai perso contro ${numPC}! Godo!`)
     document.getElementById("risultato").innerHTML =`Hai perso contro ${numPC}! Godo!`;
 }
+
+
+// ESERCIZIO MAIL
+
+
 
 
 
